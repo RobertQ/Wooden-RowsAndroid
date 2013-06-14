@@ -1,0 +1,393 @@
+/* Copyright 2009-2011 Hewlett-Packard Development Company, L.P. All rights reserved. */
+/* Your CSS here */
+
+.shelf-header {
+  -webkit-border-image: none;
+  background: url(../images/page-header.png) no-repeat left top;
+  text-align: center;
+  height: 50px;
+}
+
+.shelf-header .enyo-header-inner {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.shelf-row {
+  border-top:none;
+  border-bottom:none;
+  border-width: 43px 27px 27px;
+  -webkit-border-image: url(../images/shelf-row.png) 43 27 27 stretch;
+}
+
+.itemList .enyo-accel-children {
+  background-image: url(../images/bg-left.png),  url(../images/bg-right.png);
+  background-position: left top, right top;
+  background-repeat: repeat-y, repeat-y;
+  background-size: auto, auto; 
+}
+
+.enyo-pane {
+  background-image: url(../images/bg-middle.png);
+  background-repeat: repeat-y;
+  background-position: left top;
+  background-size: contain;  
+}
+
+.enyo-dialog.topdown {
+	-webkit-border-image: url(../images/dialog.png) 32 24 32 24 stretch stretch;
+}
+
+.itemCells {
+  margin-top: -40px;
+  margin-bottom: -56px;
+}
+.itemTitle {
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  visibility: hidden;
+}
+
+.imageWrapper {
+  margin-left: 14px;
+  -webkit-transition: all 300ms linear;
+}
+.removing {
+	-webkit-transform: scale(0.01);
+}
+
+.dvd-img, .xbox-img, .wii-img {
+  width: 116px;
+  height: 160px;
+  padding-left: 0px;
+}
+
+.dvd, .xbox, .wii {
+  width: 162px;
+  height: 200px;
+  /*background: url(../images/dvd-overlay.png) no-repeat left top;*/
+  display:block;
+  margin-top: -167px;
+  margin-left: -2px;  
+}
+
+.bluray-img {
+  width: 120px;
+  height: 152px;
+  padding-left: 0px;
+  /*-webkit-mask-image: url(../images/bluray-mask.png);*/
+}
+
+.bluray {
+  width: 162px;
+  height: 200px;
+  /*background: url(../images/dvd-overlay.png) no-repeat left top;*/
+  display:block;
+  margin-top: -172px;
+  margin-left: -1px;  
+}
+
+.ps3-img {
+  width: 116px;
+  height: 134px;
+  padding-left: 0px;
+}
+
+.ps3 {
+  width: 162px;
+  height: 200px;
+  /*background: url(../images/dvd-overlay.png) no-repeat left top;*/
+  display:block;
+  margin-top: -167px;
+  margin-left: -16px;  
+}
+
+.ds-img, .tds-img {
+  width: 116px !important;
+  height: 103px !important;
+  padding-left: 0px;
+}
+
+.ds, .tds {
+  width: 162px;
+  height: 200px;
+  /*background: url(../images/dvd-overlay.png) no-repeat left top;*/
+  display:block;
+  margin-top: -170px;
+  margin-left: -2px;  
+}
+
+.cd-img {
+  width: 116px;
+  padding-left: 15px;
+}
+.cd {
+  width: 165px;
+  height: 200px;
+  display: block;
+  margin-top: -169px;
+  margin-left: -8px;
+}
+
+.vinyl-img {
+  width: 116px;
+  padding-left: 0px;
+}
+.vinyl {
+  width: 165px;
+  height: 200px;
+  display: block;
+  margin-top: -173px;
+  margin-left: -7px;
+}
+
+
+.book {
+  width: 157px;
+  height: 200px;
+  display: block;
+  margin-top: -174px;
+  margin-left: 14px;
+}
+
+.book-img {
+  width: 104px;
+  height: 160px;
+  padding-left: 15px;
+}
+
+.default {
+	display: none;
+}
+
+.default-img {
+	border-width: 7px 29px 29px 25px;
+	-webkit-border-image: url(../images/default-overlay.png) 7 31 26 24 stretch;
+	margin-left: -20px;
+	max-width: 130px;
+	max-height: 160px;
+}
+
+.lent {
+	opacity: 0.3;
+}
+
+
+
+.icon-unselected {
+	border: 2px solid transparent;
+	padding: 4px;
+	-webkit-border-radius: 5px;
+}
+
+.icon-selected {
+	border: 2px solid #5aa6ec;
+	padding: 4px;
+	-webkit-border-radius: 5px;
+}
+
+.result-item-name {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.pullout {
+	top: 0;
+	bottom: 0;
+	width: 500px;
+ 	background-color: #d8d8d8;
+}
+
+.displayItemName {
+	font-size: 28px;
+	font-family: PreludeWGL-Light;
+	padding: 4px;
+}
+
+.displayItemCreator {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.displayItemImage {
+	max-width: 50%;
+}
+
+.displayItemImageWrapper {
+	text-align: center;
+}
+
+.displayItemDescription {
+	padding: 7px;
+	font-size: 16px;
+}
+
+.emptyLibrary {
+	position: fixed;
+	z-index: 10000;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	background: rgba(0,0,0,0.4);
+	color: #fff;
+	text-align: center;
+	padding: 4px;
+	border-radius: 50%;
+	-webkit-border-radius: 10px;
+}
+
+.zheph-android-menu {
+	background-color: rgba(0,0,0,0.8);
+	color: #fff;
+	border-top: 3px solid rgba(204,204,204,0.4);
+	width: 100%;
+	transition: opacity 1s;
+	-moz-transition: opacity 1s; /* Firefox 4 */
+	-webkit-transition: opacity 1s; /* Safari and Chrome */
+	-o-transition: opacity 1s; /* Opera */	
+	/*opacity: 0;*/
+}
+.zheph-android-menu.showing {
+/*	opacity: 0.8;*/
+}
+
+.zheph-android-menu-button {
+	text-align:center;
+	border-right: 1px solid #3f3f3f;
+	max-width: 150px;
+	font-size: 16px;
+	padding: 7px 10px;
+	transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s; /* Firefox 4 */
+	-webkit-transition: background-color 0.5s; /* Safari and Chrome */
+	-o-transition: background-color 0.5s; /* Opera */	
+}
+.zheph-android-menu-button.enyo-button-down {
+	background-color: #007b9c;
+}
+
+.zheph-android-menu img {
+	width: 20px;
+	height: 20px;
+}
+
+
+
+
+
+/*PHONE SPECIFIC STUFF*/
+@media only screen and (max-device-width: 480px) {
+.dvd-img, .xbox-img, .wii-img {
+    width: 58px !important;
+    height: 80px !important;
+    padding-left: 0px;
+}
+
+.dvd, .xbox, .wii {
+    width: 81px !important;
+    height: 100px !important;
+    /*background: url(../images/dvd-overlay.png) no-repeat left top;*/
+    display:block;
+    margin-top: -84px !important;
+    margin-left: -2px;  
+}
+
+.bluray-img {
+    width: 60px !important;
+    height: 76px !important;
+    padding-left: 0px;
+    /*-webkit-mask-image: url(../images/bluray-mask.png);*/
+}
+
+.bluray {
+    width: 81px !important;
+    height: 100px !important;
+    /*background: url(../images/dvd-overlay.png) no-repeat left top;*/
+    display:block;
+    margin-top: -86px !important;
+    margin-left: -1px;  
+}
+
+.ps3-img {
+    width: 58px !important;
+    height: 67px !important;
+    padding-left: 0px;
+}
+
+.ps3 {
+    width: 81px !important;
+    height: 100px !important;
+    /*background: url(../images/dvd-overlay.png) no-repeat left top;*/
+    display:block;
+    margin-top: -84px !important;
+    margin-left: -16px;  
+}
+
+.ds-img, .tds-img {
+    width: 58px !important;
+    height: 51px !important;
+    padding-left: 0px;
+}
+
+.ds, .tds {
+    width: 81px !important;
+    height: 100px !important;
+    /*background: url(../images/dvd-overlay.png) no-repeat left top;*/
+    display:block;
+    margin-top: -85px !important;
+    margin-left: -2px;  
+}
+
+.cd-img {
+    width: 58px !important;
+    padding-left: 15px;
+}
+.cd {
+    width: 82px !important;
+    height: 100px !important;
+    display: block;
+    margin-top: -85px !important;
+    margin-left: -8px;
+}
+
+.vinyl-img {
+    width: 58px !important;
+    padding-left: 15px;
+}
+.vinyl {
+    width: 82px !important;
+    height: 100px !important;
+    display: block;
+    margin-top: -85px !important;
+    margin-left: -8px;
+}
+
+
+.book {
+    width: 78px !important;
+    height: 100px !important;
+    display: block;
+    margin-top: -87px !important;
+    margin-left: 14px;
+}
+
+.book-img {
+    width: 52px !important;
+    height: 80px !important;
+    padding-left: 15px;
+}
+
+.default {
+	display: none;
+}
+
+.default-img {
+	border-width: 7px 29px 29px 25px;
+	-webkit-border-image: url(../images/default-overlay.png) 7 31 26 24 stretch;
+	margin-left: -20px;
+}
+
+}
